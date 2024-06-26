@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Delete User</title>
+</head>
+<body>
+    <h1>Delete User</h1>
+    <form action="#" th:action="@{/api/users/delete}" method="post">
+        <label>Email:</label>
+        <input type="email" name="email" /><br>
+        <button type="submit">Delete</button>
+    </form>
+    <p th:text="${message}"></p>
+</body>
+</html>
